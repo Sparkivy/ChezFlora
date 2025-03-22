@@ -1,0 +1,106 @@
+panier-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Titre du panier */
+h1 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #2c5e1a; 
+}
+
+/* Table des produits dans le panier */
+.table-panier {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.table-panier th, .table-panier td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.table-panier th {
+  background: #2c5e1a; 
+  color: white;
+}
+
+.table-panier td {
+  font-size: 16px;
+}
+
+/* Bouton Supprimer */
+button.supprimer {
+  background: #ff4d4d; 
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button.supprimer:hover {
+  background: #cc0000;
+}
+
+/* Input pour changer la quantité */
+input.quantite {
+  width: 50px;
+  text-align: center;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Résumé du panier */
+.total-container {
+  text-align: center;
+  margin-top: 20px;
+  padding: 15px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.total-container h3 {
+  font-size: 22px;
+  color: #2c5e1a;
+}
+
+/* Bouton Passer la commande */
+button.btn-commande {
+  background: #2c5e1a; 
+  color: white;
+  padding: 12px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button.btn-commande:hover {
+  background: #228B22; 
+}
+
+footer {
+  background-color: #8fbb98;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
