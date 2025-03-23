@@ -1,29 +1,28 @@
 
 
 .contact-container {
-  margin-top: 300px; 
-  width: 100%;
-  margin-top: 100px;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
+  padding: 50px 20px;
+  gap: 40px;
 
 }
 
 .contact-info {
-  background: white;
-  padding: 20px;
-  border-radius: 15px;
+  background: #fff;
+  margin-top: 70px;
+  padding: 30px;
+  border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  width: 100%;
-  max-width: 600px;
+  max-width: 500px;
 }
 
 .contact-info h1 {
-  color: #8fbb98;
-  font-size: 28px;
-  margin-bottom: 10px;
+  font-size: 24px;
+  margin-top: 40px;
+  color: #4CAF50;
 }
 
 .contact-info p {
@@ -46,14 +45,15 @@
   padding: 30px;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  margin-top: 30px;
+  margin-top: 60px;
+  max-width: 500px;
   width: 100%;
-  height: 500px;
-  max-width: 600px;
 }
 
 .contact-form h2 {
-  color: #8fbb98;
+  font-size: 22px;
+  margin-bottom:18px;
+  color: #4CAF50;
   text-align: center;
 }
 
@@ -77,6 +77,7 @@
   font-size: 16px;
   outline: none;
   background: white;
+  transition: border-color 0.3s;
 }
 
 .input-box label {
@@ -101,6 +102,40 @@
   background: white;
   padding: 2px 5px;
 }
+
+.message-box {
+    width: 100%;
+    height: 150px; /* Fixed height */
+    resize: none; /* Prevent user from resizing */
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.message-box:focus {
+    border-color: #8BC34A; /* Highlight effect on focus */
+    outline: none;
+}
+
+/* Bouton */
+button {
+  width: 100%;
+  padding: 12px;
+  background: #4CAF50;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #388E3C;
+}
+
 
 
 .contact-form button {
@@ -134,11 +169,21 @@
 
 
 footer {
-  background-color: #8fbb98;
-  color: white;
-  padding: 20px;
+  background: #8fbb98;
+  color: var(--white);
   text-align: center;
+  padding: 15px 0;
+  width: 100%;
   position: relative;
   bottom: 0;
-  width: 100%;
+  margin-top: 50px;
+}
+
+
+
+/* Responsivité */
+@media (max-width: 500px) {
+  .signup-container {
+      width: 90%;
+  }
 }
