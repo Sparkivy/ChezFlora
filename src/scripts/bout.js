@@ -1,4 +1,8 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.querySelectorAll('.ajouter-panier').forEach(button => {
+    button.addEventListener('click', () => {
+        console.log("Bouton cliqué !");
+    });
+});document.addEventListener("DOMContentLoaded", () => {
   const filtres = document.querySelectorAll(".filtre");
   const produits = document.querySelectorAll(".produit");
 
@@ -23,4 +27,5 @@ document.addEventListener("DOMContentLoaded", () => {
       });
 
   });
+  console.log("Script chargé !");
 });

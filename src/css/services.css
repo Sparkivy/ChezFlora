@@ -14,8 +14,28 @@ main {
 .intro {
   margin-top: 80px; 
   margin-bottom: 50px;
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  
+}
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-10px); }
+  100% { opacity: 1; transform: translateY(0); }
 }
 
+.intro h1 {
+  color: #ff4081;
+  font-size: 24px;
+  animation: fadeIn 0.7s ease-in-out;
+}
+#animated-title {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid #ff4081; /* Effet curseur */
+  width: 0;
+  animation: typing 2s steps(20, end) forwards, blink 0.5s step-end infinite alternate;
+}
 .services {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -30,6 +50,8 @@ main {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
   transition: transform 0.3s ease;
+  font-family: 'Playfair Display', serif;
+  font-weight: 18px;
 }
 
 .service-card:hover {
@@ -47,11 +69,25 @@ main {
   color: #45a049;
   margin-top: 15px;
   font-size: 22px;
+  font-family: 'Playfair Display', serif;;
 }
 
 .service-card p {
   color: #666;
   font-size: 16px;
+}
+.effect{
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.effect img{
+  transition: all 0.3s ease-in-out;
+}
+
+.effect  img:hover{
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
 }
 
 footer {

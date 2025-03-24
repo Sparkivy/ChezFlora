@@ -169,21 +169,9 @@ button:hover {
 
 
 footer {
-  background: #8fbb98;
-  color: var(--white);
+  background-color: #8fbb98;
+  color: white;
   text-align: center;
-  padding: 15px 0;
+  margin-top: 90px;
   width: 100%;
-  position: relative;
-  bottom: 0;
-  margin-top: 50px;
-}
-
-
-
-/* Responsivité */
-@media (max-width: 500px) {
-  .signup-container {
-      width: 90%;
-  }
 }

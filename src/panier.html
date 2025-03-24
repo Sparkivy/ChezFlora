@@ -6,23 +6,26 @@
     <title>Mon panier - ChezFlora</title>
     <link rel="stylesheet" href="css/panier.css">
     <link rel="stylesheet" href="css/acct.css">
-
 </head>
-    
-<nav class="navbar">
-  <div class="logo">ChezFlora</div>
-  <ul class="nav-links">
-      <li><a href="index.html">Accueil</a></li>
-      <li><a href="bout.html">Boutique</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="cont.html">Contact</a></li>
-      <li><a href="commandes.html">Commandes</a></li>
-      <li><a href="panier.html">Panier</a></li>
-      <li><a href="login.html" class="login-btn"><span></span> Se Connecter</a></li>
-  </ul>
-</nav>
+
 <body>
+
+    <!-- Barre de navigation -->
+    <nav class="navbar">
+        <div class="logo">ChezFlora</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="bout.html">Boutique</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="cont.html">Contact</a></li>
+            <li><a href="commandes.html">Commandes</a></li>
+            <li><a href="panier.html">Panier <span id="cart-count">0</span></a></li>
+            <li><a href="login.html" class="login-btn"><span></span> Se Connecter</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenu principal -->
     <header>
         <h1>Mon panier</h1>
     </header>
@@ -35,7 +38,6 @@
                     <th>📦 Produit</th>
                     <th>💰 Prix</th>
                     <th>🔄 Quantité</th>
-
                     <th>🗑️ Action</th>
                 </tr>
             </thead>
@@ -45,11 +47,12 @@
         </table>
 
         <div class="total-container">
-          <h3>💰 Total : <span id="totalAmount">0€</span></h3>
-          <button class="btn-commande">✅ Passer la commande</button>
+            <h3>💰 Total : <span id="totalAmount">0€</span></h3>
+            <button class="btn-commande">✅ Passer la commande</button>
         </div>
     </main>
 
-    <script src="scripts/panier.js"></script>
+    <script src="scripts/"></script>
+
 </body>
 </html>

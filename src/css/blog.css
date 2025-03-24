@@ -120,6 +120,20 @@ header .highlight {
 .blog-card:hover {
   transform: translateY(-5px);
 }
+.effect{
+
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.effect img{
+  transition: all 0.3s ease-in-out;
+}
+
+.effect  img:hover{
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
+}
 .comments {
   margin-top: 40px;
   padding: 20px;
