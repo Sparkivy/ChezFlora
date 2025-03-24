@@ -143,7 +143,19 @@ header .highlight {
   transform: scale(1.1);
   
 }
-
+.logo img {
+  width: 100px; /* Ajuste la taille du logo */
+  height: auto; /* Garde les proportions */
+  display: block; /* Évite les marges inutiles */
+  width: 50px; /* Ajuste la largeur du logo */
+  height: auto; /* Garde les proportions */
+  display: flex; /* Permet un bon alignement */
+  align-items: center; /* Centre verticalement */
+  border-radius: 30px;
+}
+.navbar .logo {
+  margin-left: 20px; /* Espacement avec le menu */
+}
 /* Produits */
 .products {
   padding: 40px 20px;
