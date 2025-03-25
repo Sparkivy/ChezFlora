@@ -10,14 +10,8 @@ body {
   background-color: #f9f9f9;
   color: #333;  
 }
-body.ind{
-  margin:auto;
-  padding: 0;
-  max-width: fit-content;
-  max-width: 800px; 
-  margin: auto;
- 
-}
+
+
 
 /* Barre de navigation fixe */
 .navbar {
