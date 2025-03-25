@@ -27,6 +27,7 @@ main {
   color: #ff4081;
   font-size: 24px;
   animation: fadeIn 0.7s ease-in-out;
+  margin-top: 50px;
 }
 #animated-title {
   display: inline-block;

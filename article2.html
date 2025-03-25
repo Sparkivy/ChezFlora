@@ -7,6 +7,71 @@
     <link rel="stylesheet" href="css/article.css">
     <link rel="stylesheet" href="css/acct.css">
 </head>
+<style>.article-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.effect img {
+    width: 220px;
+    height: auto;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.effect img:hover {
+    transform: scale(1.05);
+}
+
+.text {
+    max-width: 600px;
+    font-family: play;
+    font-family: 'Playfair Display', serif;
+}
+
+h2 {
+    color:  #8fbb98;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+p {
+    color: #444;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+ul {
+    padding-left: 20px;
+    font-size: 1.2em;
+}
+
+li {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 20px;
+    background: #8fbb98;
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #1B5E20;
+}
+</style>
 <body>
         
     <nav class="navbar">
@@ -29,30 +94,19 @@
 
     <section class="article-content">
         <div class="effect">
-            <img src="public/images/plant.jpg" alt="Entretenir ses plantes"></div>
-        <div>
-           
-            <p>
-                Prendre soin de ses plantes d'intérieur est essentiel pour les garder en bonne santé et prolonger leur durée de vie. 
-                Un bon entretien permet d'éviter les maladies et de favoriser une belle croissance.
-            </p>
-            <p>
-                Voici quelques conseils pour entretenir vos plantes :
-                <ul>
-                    <li><strong>Arrosage modéré :</strong> Trop d'eau peut provoquer le pourrissement des racines. Il est préférable d'arroser en fonction des besoins spécifiques de chaque plante.</li>
-                    <li><strong>Exposition à la lumière :</strong> Placez vos plantes dans un endroit bien éclairé, mais évitez l’exposition directe aux rayons du soleil pour ne pas brûler les feuilles.</li>
-                    <li><strong>Engrais naturel :</strong> Nourrissez vos plantes avec des engrais adaptés pour leur apporter les nutriments nécessaires.</li>
-                    <li><strong>Taille régulière :</strong> Retirez les feuilles mortes ou jaunies pour stimuler la croissance et améliorer l’apparence de la plante.</li>
-                    <li><strong>Humidité ambiante :</strong> Certaines plantes apprécient un taux d’humidité élevé. Pensez à vaporiser un peu d’eau sur les feuilles ou à placer un humidificateur à proximité.</li>
-                </ul>
-            </p>
-            <p>
-                En suivant ces recommandations, vos plantes resteront en pleine forme et apporteront une touche de verdure agréable à votre intérieur.
-                Pour plus de conseils, consultez notre boutique et découvrez nos accessoires pour le jardinage !
-            </p>
+            <img src="public/images/plant.jpg" alt="Entretenir ses plantes">
         </div>
-        </section>
-
+        <div class="text">
+            <h2>Entretenir ses plantes d'intérieur</h2>
+            <p>Un bon entretien permet d'éviter les maladies et favorise une belle croissance.</p>
+            <ul>
+                <li><strong>🌿 Arrosage :</strong> Adaptez l'eau aux besoins de chaque plante.</li>
+                <li><strong>☀️ Lumière :</strong> Placez-les dans un endroit éclairé, sans soleil direct.</li>
+                <li><strong>🌱 Engrais :</strong> Utilisez des nutriments adaptés.</li>
+            </ul>
+            
+        </div>
+    </section>
 
     <!-- Commentaires -->
     <section class="comments-section">
@@ -71,7 +125,7 @@
     
             <!-- Boîte pour l'image / photo -->
             <div class="comment-photo">
-                <img src="chemin/vers/image.jpg" alt="Photo décorative" />
+                <img src="public/images/tul1.JPG" alt="Photo décorative" />
             </div>
         </div>
     

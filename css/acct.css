@@ -8,7 +8,15 @@
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #f9f9f9;
-  color: #333;
+  color: #333;  
+}
+body.ind{
+  margin:auto;
+  padding: 0;
+  max-width: fit-content;
+  max-width: 800px; 
+  margin: auto;
+ 
 }
 
 /* Barre de navigation fixe */
@@ -132,6 +140,7 @@ header .highlight {
 #animated-text {
   opacity: 0;
   animation: fadeIn 0.5s ease-out 0.5s forwards;
+  color: #f9f9f9;
 }
 
 
@@ -174,13 +183,13 @@ header .highlight {
   
 }
 .logo img {
-  width: 100px; /* Ajuste la taille du logo */
-  height: auto; /* Garde les proportions */
-  display: block; /* Évite les marges inutiles */
-  width: 50px; /* Ajuste la largeur du logo */
-  height: auto; /* Garde les proportions */
-  display: flex; /* Permet un bon alignement */
-  align-items: center; /* Centre verticalement */
+  width: 100px; 
+  height: auto; 
+  display: block; 
+  width: 50px;
+  height: auto; 
+  display: flex; 
+  align-items: center; 
   border-radius: 20px;
 }
 .navbar .logo {
@@ -237,6 +246,22 @@ header .highlight {
   font-size: 1rem;
   color: #555;
 }
+
+.effect{
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.effect img{
+  transition: all 0.3s ease-in-out;
+}
+
+.effect  img:hover{
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
+}
+
+
 /* Témoignages clients */
 #temoignages {
   margin: 50px 0;
